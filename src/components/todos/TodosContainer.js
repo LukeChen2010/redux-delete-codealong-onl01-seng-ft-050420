@@ -17,7 +17,7 @@ class TodosContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    todos: state.todos
+    delete: todoText => dispatch({type: 'DELETE_TODO', payload: todoText })
   }
 }
 
